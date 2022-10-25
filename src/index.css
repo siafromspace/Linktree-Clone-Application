@@ -4,9 +4,10 @@
   box-sizing: border-box;
 }
 body {
-  padding: 2rem;
+  padding: 2rem 4rem;
   width: 100vw;
   height: 100vh;
+  background: #FFFFFF;
 }
 #root {
   display: flex;
@@ -14,25 +15,124 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
+  position: relative;
 }
-#profile__img {
-  width: 88px;
-  height: 88px;
-  border-radius: 50%;
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.profile__pic {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 #slack {
   display: none;
 }
 #twitter {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   width: 100%;
+  color: #101818;
   text-align: center;
 }
 .menu {
+  position: absolute;
+  right: 20%;
+}
+.mobile__menu, .desktop__menu {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px dashed #D0D5DD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobile__menu {
   display: none;
+}
+main {
+  margin-top: 2rem;
+  width: 100%;
 }
 .link__tree {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.link__tree .link {
+  padding: 24px 32px;
+  background: #EAECF0;
+  text-decoration: none;
+  color: #101818;
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  border-radius: 8px;
+  max-width: 1152px;
+  text-align: center;
+}
+.social__links {
+  margin: 2rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.social__links > * {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+footer {
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 1216px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-top: 1px solid #EAECF0;
+  /* position: sticky;
+  background: #FFFFFF;
+  bottom: 0; */
+}
+footer > * {
+  max-width: 100%;
+  height: auto;
+}
+footer .footer__text {
+  font-weight: 400;
+  color: #667085;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 2rem 1rem;
+  }
+  .menu {
+    right: 1rem;
+  }
+  .mobile__menu {
+    display: flex;
+  }
+  .desktop__menu {
+    display: none;
+  }
+  main {
+    margin-bottom: 2rem;
+  }
+  .social__links {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
 }

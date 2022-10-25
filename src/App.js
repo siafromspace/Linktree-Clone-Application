@@ -1,5 +1,5 @@
 import './App.css';
-import profilePic from "./assets/sharon.jpeg"
+import profilePic from "./assets/profile__img.svg"
 import github from "./assets/github-icon.svg"
 import slack from "./assets/slack-icon.svg"
 import I4G from "./assets/I4G-logo.svg"
@@ -15,19 +15,27 @@ function App() {
   const bookPython = "https://books.zuri.team/python-for-beginners?ref_id=ysharon"
   const pitch = "https://background.zuri.team"
   const bookDesign = "https://books.zuri.team/design-rules"
+  const githubLink = "https://github.com/siafromspace"
+  const slackLink = ""
 
 
   return (
     <>
       <header>
         <div>
-          <img src={profilePic} alt="profile pic" id="profile__img" />
+          <div className="profile__pic">
+            <img src={profilePic} alt="profile pic" id="profile__img" />
+          </div>
           <p id="twitter">Sharon Yakubu</p>
           <p id="slack">Sharon Yakubu</p>
         </div>
         <div className="menu">
-          <img src={desktopMenu} alt="desktop menu" />
-          <img src={mobileMenu} alt="mobile menu" />
+          <div className="desktop__menu" >
+            <img src={desktopMenu} alt="desktop menu" />
+          </div>
+          <div className="mobile__menu">
+            <img src={mobileMenu} alt="mobile menu" />
+          </div>
         </div>
       </header>
       <main>
@@ -39,14 +47,18 @@ function App() {
           <a href={pitch} className="link" id="pitch">Background Check for Coders</a>
           <a href={bookDesign} className="link" id="book__design">Design Books</a>
         </div>
-        <div>
-          <img src={slack} alt="slack" />
-          <img src={github} alt="github" />
+        <div className="social__links">
+          <a href={slackLink}>
+            <img src={slack} alt="slack" />
+          </a>
+          <a href={githubLink}>
+            <img src={github} alt="github" />
+          </a>
         </div>
       </main>
       <footer>
         <img src={zuri} alt="zuri logo" />
-        <p>HNG Internship 9 Frontend Task</p>
+        <p className="footer__text">HNG Internship 9 Frontend Task</p>
         <img src={I4G} alt="i4g logo" />
       </footer>
     </>
