@@ -32,6 +32,29 @@ header {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  top: 0;
+  bottom: 0;
+  left: 1.3rem;
+  right: 0;
+  border-radius: 50%;
+  background: rgba(52, 64, 84, 0.75);
+  cursor: pointer;
+  opacity: 0;
+}
+.overlay:hover {
+  opacity: 1;
+}
+.cam__icon {
+   position: absolute;
+   bottom: 0.5rem;
+   left: 50%;
+   transform: translateX(-50%);
 }
 #slack {
   display: none;
@@ -55,6 +78,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+.mobile__menu:hover, .desktop__menu:hover {
+  background: #D0D5DD;
 }
 .mobile__menu {
   display: none;
@@ -81,6 +108,9 @@ main {
   border-radius: 8px;
   max-width: 1152px;
   text-align: center;
+}
+.link__tree .link:hover {
+  background: #D0D5DD;
 }
 .social__links {
   margin: 2rem 0;
@@ -127,12 +157,6 @@ footer .footer__text {
     display: flex;
   }
   .desktop__menu {
-    display: none;
-  }
-  main {
-    margin-bottom: 2rem;
-  }
-  .social__links {
     display: none;
   }
   footer {

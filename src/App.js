@@ -6,6 +6,7 @@ import I4G from "./assets/I4G-logo.svg"
 import zuri from "./assets/zuri-logo.svg"
 import desktopMenu from "./assets/menu-desktop.svg"
 import mobileMenu from "./assets/menu-mobile.svg"
+import icon from "./assets/Icon.svg"
 
 function App() {
 
@@ -25,6 +26,9 @@ function App() {
         <div>
           <div className="profile__pic">
             <img src={profilePic} alt="profile pic" id="profile__img" />
+            <div className='overlay'>
+              <img src={icon} alt="camera icon" className="cam__icon" />
+            </div>
           </div>
           <p id="twitter">Sharon Yakubu</p>
           <p id="slack">Sharon Yakubu</p>
