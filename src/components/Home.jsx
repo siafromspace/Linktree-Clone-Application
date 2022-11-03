@@ -4,6 +4,7 @@ import slack from "../assets/slack-icon.svg"
 import desktopMenu from "../assets/menu-desktop.svg"
 import mobileMenu from "../assets/menu-mobile.svg"
 import icon from "../assets/Icon.svg"
+import { Link } from "react-router-dom"
 
 function Home() {
 
@@ -47,6 +48,7 @@ function Home() {
                     <a href={bookPython} className="link" id="book__python">Python Books</a>
                     <a href={pitch} className="link" id="pitch">Background Check for Coders</a>
                     <a href={bookDesign} className="link" id="book__design">Design Books</a>
+                    <Link to="/contact" className="link" id="contact">Contact Us</Link>
                 </div>
                 <div className="social__links">
                     <a href={slackLink}>

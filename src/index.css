@@ -20,6 +20,9 @@ body {
   height: 100%;
   position: relative;
 }
+
+/* HOME PAGE */
+
 header {
   display: flex;
   flex-direction: column;
@@ -124,6 +127,9 @@ main {
   height: 24px;
   cursor: pointer;
 }
+
+/* FOOTER */
+
 footer {
   margin-top: 3rem;
   width: 100%;
@@ -145,6 +151,8 @@ footer .footer__text {
   font-weight: 400;
   color: #667085;
 }
+
+/* CONTACT PAGE */
 
 @media screen and (max-width: 768px) {
   body {
