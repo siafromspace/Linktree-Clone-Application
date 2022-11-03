@@ -5,26 +5,26 @@ const Contact = () => {
     return (
         <main className="contact__page">
             <div className="contact__container">
-                <h1>Contact Me</h1>
-                <p>Hi there, contact me to ask me about anything you have in mind.</p>
+                <h1 className="contact__title">Contact Me</h1>
+                <p className="contact__text">Hi there, contact me to ask me about anything you have in mind.</p>
                 <form>
                     <div className="name__container">
                         <div className="form__child">
-                            <label htmlFor="first_name">First Name</label>
+                            <label htmlFor="first_name" className="form__child-title">First Name</label>
                             <input type="text" id="first_name" placeholder="Enter your first name" />
                         </div>
                         <div className="form__child">
-                            <label htmlFor="last_name">Last Name</label>
+                            <label htmlFor="last_name" className="form__child-title">Last Name</label>
                             <input type="text" id="last_name" placeholder="Enter your last name" />
                         </div>
                     </div>
                     <div className="form__child">
-                        <label htmlFor="email">Email</label>
+                        <label htmlFor="email" className="form__child-title">Email</label>
                         <input type="email" name="email" id="email" placeholder="yourname@email.com" />
                     </div>
                     <div className="form__child">
-                        <label htmlFor="message">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Send me a message and I will reply you as soon as possible..."></textarea>
+                        <label htmlFor="message" className="form__child-title">Message</label>
+                        <textarea name="message" id="message" placeholder="Send me a message and I will reply you as soon as possible..."></textarea>
                     </div>
                     <div className="checkbox">
                         <input type="checkbox" name="data" />
