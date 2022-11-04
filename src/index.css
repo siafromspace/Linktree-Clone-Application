@@ -275,13 +275,24 @@ textarea {
   .desktop__menu {
     display: none;
   }
+  .link__tree .link {
+    font-size: 14px;
+  }
   footer {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 1rem;
+    gap: 1.2rem;
   }
   .name__container {
     flex-direction: column;
   }
 }
+<<<<<<< HEAD
+  .name__container {
+    flex-direction: column;
+  }
+}
+=======
+}
+>>>>>>> b0bc37217f72151c36ce9faff9fae4e950351e9f
