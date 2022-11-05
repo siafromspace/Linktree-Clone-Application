@@ -275,6 +275,9 @@ textarea {
   border-radius: 8px;
   cursor: pointer;
 }
+#btn__submit:hover {
+  background: #175CD3;
+}
 
 @media screen and (max-width: 768px) {
   body {
