@@ -244,6 +244,9 @@ textarea {
 .error__border {
   border: 1px solid #F89687;
 }
+.error__border:focus {
+  outline-color: #F89687;
+}
 .checkbox {
   display: flex;
   gap: 0.3rem;
