@@ -34,11 +34,11 @@ const Contact = () => {
                     <div className="name__container">
                         <div className="form__child">
                             <label htmlFor="first_name" className="form__child-title">First Name</label>
-                            <input type="text" id="first_name" placeholder="Enter your first name" />
+                            <input type="text" id="first_name" placeholder="Enter your first name" required />
                         </div>
                         <div className="form__child">
                             <label htmlFor="last_name" className="form__child-title">Last Name</label>
-                            <input type="text" id="last_name" placeholder="Enter your last name" />
+                            <input type="text" id="last_name" placeholder="Enter your last name" required  />
                         </div>
                     </div>
                     <div className="form__child">
