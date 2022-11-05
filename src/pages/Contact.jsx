@@ -20,11 +20,11 @@ const Contact = () => {
                     </div>
                     <div className="form__child">
                         <label htmlFor="email" className="form__child-title">Email</label>
-                        <input type="email" name="email" id="email" placeholder="yourname@email.com" />
+                        <input type="email" name="email" id="email" placeholder="yourname@email.com" required />
                     </div>
                     <div className="form__child">
                         <label htmlFor="message" className="form__child-title">Message</label>
-                        <textarea name="message" id="message" placeholder="Send me a message and I will reply you as soon as possible..."></textarea>
+                        <textarea name="message" id="message" placeholder="Send me a message and I will reply you as soon as possible..." required></textarea>
                     </div>
                     <div className="checkbox">
                         <input type="checkbox" name="data" />
