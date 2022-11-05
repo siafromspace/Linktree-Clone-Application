@@ -179,6 +179,8 @@ form {
   flex-direction: column;
   gap: 1rem;
   width: 100%;
+  margin-top: 1rem;
+    gap: 1.2rem;
 }
 .name__container {
   display: flex;
@@ -306,6 +308,9 @@ textarea {
   }
   .checkbox {
     align-items: flex-start;
+  }
+  .checkbox > label {
+    margin-top: -0.3rem;
   }
   .contact__text {
     font-size: 18px;
